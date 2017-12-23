@@ -24,10 +24,10 @@
 
 
 [//]: # (Reference)
-[min]: (steps/최소값찾기.md)
-[2309]: (holds/2309.md)
-[2607]: (holds/2607.md)
-[2605]: (holds/2605.md)
+[min]: steps/최소값찾기.md
+[2309]: holds/2309.md
+[2607]: holds/2607.md
+[2605]: holds/2605.md
 
 
 
