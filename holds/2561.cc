@@ -13,7 +13,7 @@ void sw(int a, int b) {
 }
 
 void Solve(int cur) {
-	if (cur > 2) return;
+	if (cur > 3) return;
 	bool fin = 1;
 	for (int i=1; i<=N; ++i) {
 		if (A[i] != i) {
@@ -23,7 +23,7 @@ void Solve(int cur) {
 	}
 
 	if (fin) {
-		while (ans.size() < 2)
+		while (ans.size() < 3)
 			ans.push_back(make_pair(1, 1));
 
 		for (auto it : ans)
@@ -43,6 +43,9 @@ void Solve(int cur) {
 
 	sort(st.begin(), st.end());
 	st.erase(unique(st.begin(), st.end()), st.end());
+
+	if (cur == 2 && st.size() > 6) return;
+	if (cur == 1 && st.size() > 10) return;
 	for (int i=0; i<st.size(); ++i) for (int j=i+1; j<st.size(); ++j) {
 		int a = st[i], b = st[j];
 		sw(a, b);
